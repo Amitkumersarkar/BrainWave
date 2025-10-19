@@ -2,11 +2,11 @@ import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState("light");
 
     return (
         <div className="dark:bg-black relative">
-            <Navbar theme={theme} setThem={setTheme}></Navbar>
+            <Navbar theme={theme} setTheme={setTheme} />
         </div>
     );
 };
