@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import assets from "../../assets/assets";
 import { useState } from "react";
 import ThemeToggleBtn from "../ToggleBtn/ThemeToggleBtn";
@@ -26,26 +26,12 @@ const Navbar = ({ theme, setTheme }) => {
                     src={assets.close_icon}
                     alt=""
                 />
-                <li onClick={() => setSidebarOpen(false)}>
-                    <NavLink to="/" className="sm:hover:border-b">
-                        Home
-                    </NavLink>
-                </li>
-                <li onClick={() => setSidebarOpen(false)}>
-                    <NavLink to="/services" className="sm:hover:border-b">
-                        Services
-                    </NavLink>
-                </li>
-                <li onClick={() => setSidebarOpen(false)}>
-                    <NavLink to="/our-work" className="sm:hover:border-b">
-                        Our Work
-                    </NavLink>
-                </li>
-                <li onClick={() => setSidebarOpen(false)}>
-                    <NavLink to="/contact-us" className="sm:hover:border-b">
-                        Contact Us
-                    </NavLink>
-                </li>
+                <ul className="flex gap-8">
+                    <li><a className="hover:text-secondary" href="#hero">Home</a></li>
+                    <li><a className="hover:text-secondary" href="#services">Services</a></li>
+                    <li><a className="hover:text-secondary" href="#our-work">Our Work</a></li>
+                    <li><a className="hover:text-secondary" href="#contact-us">Contact Us</a></li>
+                </ul>
             </div>
 
             <div className="flex items-center gap-2 sm:gap-4">
@@ -62,12 +48,12 @@ const Navbar = ({ theme, setTheme }) => {
                     className="w-8 sm:hidden"
                     alt=""
                 />
-                <NavLink to="/contact-us">
-                    <button className="btn btn-info flex items-center rounded-4xl text-xl font-bold max-sm:hidden gap-2">
-                        Contact{" "}
-                        <img src={assets.arrow_icon} width={18} alt="" />
-                    </button>
-                </NavLink>
+                {/* <NavLink to="/contact-us"> */}
+                <button className="btn btn-secondary flex items-center rounded-4xl text-xl font-bold max-sm:hidden gap-2">
+                    <a href="#contact-us">Contact{" "}</a>
+                    <img src={assets.arrow_icon} width={18} alt="" />
+                </button>
+                {/* </NavLink> */}
             </div>
         </div>
     );

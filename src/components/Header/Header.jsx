@@ -21,7 +21,7 @@ const Header = () => {
             <OurWork></OurWork>
             <Team></Team>
             <ContactUs></ContactUs>
-            <Footer></Footer>
+            <Footer theme={theme}></Footer>
         </div>
     );
 };
