@@ -30,7 +30,7 @@ const Footer = ({ theme }) => {
             <hr className="border-gray-300 dark:border-gray-600 my-6" />
             {/* footer bottom */}
             <div className="flex justify-center sm:justify-between flex-wrap gap-4 text-sm text-gray-500 pb-6">
-                <p className="">Copyright 2025 © BrainWave.Ai developed by (AmitSarkar) - All Right Reserved.</p>
+                <p className="">Copyright 2025 © Agency.Ai developed by (AmitSarkar) - All Right Reserved.</p>
                 <div className="flex justify-between items-center  gap-4">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.instagram_icon} alt="" />
