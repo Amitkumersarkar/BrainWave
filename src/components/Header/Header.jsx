@@ -4,6 +4,7 @@ import Hero from "../Banner/Hero";
 import Services from "../../Pages/Services";
 import TrustedBy from "../../Pages/TrustedBy";
 import OurWork from "../../Pages/OurWork";
+import Team from "../../Pages/Team";
 
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -15,6 +16,7 @@ const Header = () => {
             <TrustedBy></TrustedBy>
             <Services></Services>
             <OurWork></OurWork>
+            <Team></Team>
         </div>
     );
 };

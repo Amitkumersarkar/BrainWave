@@ -24,7 +24,7 @@ const OurWork = () => {
             <Title title='Our latest work' description='From strategy to execution, we craft digital solutions that move your business forward.'></Title>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
                 {
-                    workData.map((work, idx) => <div className="hover:scale-100 duration-500 transition-all cursor-pointer" key={idx} >
+                    workData.map((work, idx) => <div className="hover:scale-105 duration-500 transition-all cursor-pointer" key={idx} >
                         <img className="w-full rounded-xl" src={work.image} alt="" />
                         <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
                         <p className="text-sm opacity-60 w-5/6">{work.description}</p>
