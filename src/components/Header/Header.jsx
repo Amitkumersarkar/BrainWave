@@ -7,6 +7,7 @@ import OurWork from "../../Pages/OurWork";
 import Team from "../../Pages/Team";
 import ContactUs from "../../Pages/ContactUs";
 import { Toaster } from "react-hot-toast";
+import Footer from "../Footer/Footer";
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
 
@@ -20,6 +21,7 @@ const Header = () => {
             <OurWork></OurWork>
             <Team></Team>
             <ContactUs></ContactUs>
+            <Footer></Footer>
         </div>
     );
 };
