@@ -28,9 +28,12 @@ const Footer = ({ theme }) => {
                 </div>
             </div>
             <hr className="border-gray-300 dark:border-gray-600 my-6" />
+            <p className="text-gray-600 mb-1 font-semibold"> Developed by AmitSarkar </p>
+            <p className="flex flex-wrap text-gray-500 gap-2 mb-3"> <img src={assets.email_icon} alt="" className="items-center" width={25} /> amitsarkar.dev.bd@gmail.com</p>
             {/* footer bottom */}
             <div className="flex justify-center sm:justify-between flex-wrap gap-4 text-sm text-gray-500 pb-6">
-                <p className="">Copyright 2025 © Agency.Ai developed by (AmitSarkar) - All Right Reserved.</p>
+                <p>Copyright 2025 © Agency.Ai- All Right Reserved.</p>
+
                 <div className="flex justify-between items-center  gap-4">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.instagram_icon} alt="" />
