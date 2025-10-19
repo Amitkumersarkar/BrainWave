@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Banner/Hero";
+import Services from "../../Pages/Services";
+import TrustedBy from "../../Pages/TrustedBy";
 
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -9,6 +11,8 @@ const Header = () => {
         <div className="dark:bg-black relative">
             <Navbar theme={theme} setTheme={setTheme} />
             <Hero></Hero>
+            <TrustedBy></TrustedBy>
+            <Services></Services>
         </div>
     );
 };
