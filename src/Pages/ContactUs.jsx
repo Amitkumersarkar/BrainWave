@@ -21,6 +21,11 @@ const ContactUs = () => {
                         <input type="email" name="email" placeholder="Enter your email" required className="w-full p-3 text-sm outline-none" />
                     </div>
                 </div>
+                <div className="sm:col-span-2">
+                    <p className="mb-2 text-sm font-medium">Message</p>
+                    <textarea name="textarea" id="" placeholder="Enter your text message" required rows="8" className="w-full p-3 text-sm outline-none rounded-lg border border-gray-300 dark:border-gray-600"></textarea>
+                </div>
+                <button type="submit" className="w-max flex gap-2 bg-primary text-white text-sm px-10 py-3 font-semibold items-center rounded-full cursor-pointer hover:scale-105 transition-all" >Submit <img src={assets.arrow_icon} className="w-5" alt="" /></button>
             </form>
         </div>
     );
