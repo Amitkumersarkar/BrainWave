@@ -1,4 +1,5 @@
 import assets from "../../assets/assets";
+import TrustedBy from "../../Pages/TrustedBy";
 
 const Hero = () => {
 
@@ -16,6 +17,7 @@ const Hero = () => {
                 <img className="w-full max-w-6xl" src={assets.hero_img} alt="" />
                 <img className="absolute -top-40 -right-40 sm:-top-100 sm:-right-70 -z-1 dark:hidden" src={assets.bgImage1} alt="" />
             </div>
+            <TrustedBy></TrustedBy>
         </div>
     );
 };
