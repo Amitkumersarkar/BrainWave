@@ -5,6 +5,7 @@ import Services from "../../Pages/Services";
 import TrustedBy from "../../Pages/TrustedBy";
 import OurWork from "../../Pages/OurWork";
 import Team from "../../Pages/Team";
+import ContactUs from "../../Pages/ContactUs";
 
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -17,6 +18,7 @@ const Header = () => {
             <Services></Services>
             <OurWork></OurWork>
             <Team></Team>
+            <ContactUs></ContactUs>
         </div>
     );
 };
