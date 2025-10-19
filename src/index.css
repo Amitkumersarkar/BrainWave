@@ -6,9 +6,21 @@
 * {
     font-family: "Manrope", sans-serif;
     font-weight: 500;
-
+    cursor: none;
 }
 
 @theme {
     --color-primary: #5044E5;
+}
+
+@keyframes cursorGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px var(--cursor-color);
+    }
+
+    50% {
+        box-shadow: 0 0 25px var(--cursor-color);
+    }
 }
